@@ -380,7 +380,7 @@ console.log(tips, finals);
 ////////////////////////////////////////////////////
 // key:value pairs
 // in arrays, order matters. objects, order does not matter
-
+/*
 //object literal 
 var james = {
      firstName: 'James',
@@ -407,4 +407,58 @@ jen.name = 'Jennifer';
 jen.birthYear = 1986;
 jen.lastName = 'Cain';
 console.log(jen);
+*/
+
+///////////////////////////////////////////////////
+// objects and methods
+////////////////////////////////////////////////////
+// objects can hold other types of data
+/*
+var james = {
+     firstName: 'James',
+     lastName: 'Bond',
+     birthYear: 1984,
+     family: ['MoneyPenny', 'Q', 'M', 'Felix'],
+     job: 'agent',
+     isMarried: true,
+     calcAge: function() {
+          this.age = 2018 - this.birthYear;
+     }
+};
+james.calcAge();
+console.log(james);
+*/
+
+
+// coding challenge 4
+
+var james = {
+     fullName: 'James Bond',
+     mass: 86.2,
+     height: 2.1,
+     calcBMI: function() {
+          this.bmi = (this.mass / (this.height * this.height));
+          return this.bmi; 
+     }
+}
+
+var mike = {
+     fullName: 'Mike Egg',
+     mass: 110,
+     height: 1.75,
+     calcBMI: function () {
+          this.bmi = (this.mass / (this.height * this.height));
+          return this.bmi;
+     }
+}
+
+console.log(james,mike);
+
+if (james.calcBMI() > mike.calcBMI()) {
+     console.log(james.fullName + ' has a higher BMI of ' + james.bmi);
+} else if (mike.bmi > james.bmi) {
+     console.log(mike.fullName + ' has a higher BMI of ' + mike.bmi + ' and he is a fat ass.');
+} else {
+     console.log('These dues have the same exact BMI!');
+}
 
