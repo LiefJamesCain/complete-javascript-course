@@ -310,7 +310,7 @@ console.log(wdyd('driver', 'Lief'));
 ///////////////////////////////////////////////////
 // arrays
 ////////////////////////////////////////////////////
-
+/*
 // new array
 var names = ['Lief', 'Chris', 'Kelsey'];
 var years = new Array(1984, 1986, 1990);
@@ -351,4 +351,27 @@ console.log(james.indexOf(33));
 
 var isDesigner = james.indexOf('designer') === -1 ? 'James is NOT a designer. James is a motorcycle racer.' : 'You already know this dude has the coolest job ever.';
 console.log(isDesigner);
+
+// coding challenge 2 
+
+function calcTip(bill) {
+     var percent;
+     if (bill < 50) {
+          percent = 0.2;
+     } else if (bill >= 50 && bill < 200) {
+          percent = 0.15;
+     } else {
+          percent = 0.1;
+     } return (percent * bill);
+}
+
+console.log(calcTip(500));
+
+
+var bills = [124, 48, 268];
+var tips = [calcTip(bills[0]),calcTip(bills[1]), calcTip(bills[2])];
+var finals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]]
+
+console.log(tips, finals);
+*/
 
