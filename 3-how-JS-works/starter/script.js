@@ -27,7 +27,7 @@ console.log(age);
 // scoping answers the question: where can we access this variable? 
 // each new function declares a scope
 // lexical scoping: 
-//  - function that is lexically within another function gets access to the scope of the outer function
+//  - function that is lexically within another function gets access to the scope of  outer function
 
 
 var a = 'Hello!';
