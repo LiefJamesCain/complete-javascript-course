@@ -311,3 +311,44 @@ console.log(wdyd('driver', 'Lief'));
 // arrays
 ////////////////////////////////////////////////////
 
+// new array
+var names = ['Lief', 'Chris', 'Kelsey'];
+var years = new Array(1984, 1986, 1990);
+console.log(names[0]);
+console.log(names.length);
+
+// mutate the array
+names[3] = 'Marcus';
+console.log(names);
+
+names[5] = 'Jessica';
+console.log(names);
+console.log(names.length);
+
+// different data types
+var james = ['James', 'Bond', 1984, true];
+console.log(james);
+console.log(' ^ this is an array.');
+
+james.push('green');
+console.log(james);
+console.log(' ^ push method -- adds element to the end.');
+
+james.unshift('Mr.');
+console.log(james);
+console.log(' ^ unshift method -- adds element to the beginning.');
+
+james.shift();
+console.log(james);
+console.log(' ^ shift method -- removes element from beginning.');
+
+james.pop();
+console.log(james);
+console.log(' ^ pop method -- removes element from the end.')
+
+console.log(james.indexOf(1984));
+console.log(james.indexOf(33));
+
+var isDesigner = james.indexOf('designer') === -1 ? 'James is NOT a designer. James is a motorcycle racer.' : 'You already know this dude has the coolest job ever.';
+console.log(isDesigner);
+
