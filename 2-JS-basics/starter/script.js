@@ -248,6 +248,7 @@ if (scoreJohn > scoreMike) {
 
 // functions 
 
+/*
 function calculateAge(birthYear) {
     return 2018 - birthYear;
 }
@@ -275,3 +276,38 @@ untilRetire(1986, 'Evan');
 untilRetire(1987, 'Shayla');
 untilRetire(1988, 'Rob');
 untilRetire(1950, 'Wanda');
+*/
+
+
+///////////////////////////////////////////////////
+// function statements and expressions
+////////////////////////////////////////////////////
+
+// function declaration
+// function wdyd (job,firstName);
+
+// function expression 
+/*
+var wdyd = function(job, firstName) {
+    switch(job) {
+        case 'teacher':
+            return firstName + ' teaches kids how to code. Would be fun, except kids.';
+        case 'driver':
+            return firstName + ' races motorcycles for a living. Dream Job!';
+        case 'designer':
+            return firstName + ' creates new machine languages. Too much math for me.';
+        default:
+            return firstName + ' needs to get a fucking job.';
+    }
+}
+
+console.log(wdyd('driver', 'Lief'));
+*/
+// function expressions return an immediate result, while function declarations do not
+
+
+
+///////////////////////////////////////////////////
+// arrays
+////////////////////////////////////////////////////
+
