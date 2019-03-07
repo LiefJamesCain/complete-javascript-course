@@ -8,6 +8,7 @@
     */
 
 // functions 
+/*
 function calcAge(year) {
     console.log(2018 - year);
 }
@@ -19,15 +20,16 @@ var retire = function(year) {
 // variables
 var age = 34; 
 console.log(age);
-
+*/
 
 ///////////////////////////////////////
 // Lecture: Scoping
+// scoping answers the question: where can we access this variable? 
+// each new function declares a scope
+// lexical scoping: 
+//  - function that is lexically within another function gets access to the scope of the outer function
 
 
-// First scoping example
-
-/*
 var a = 'Hello!';
 first();
 
@@ -40,7 +42,7 @@ function first() {
         console.log(a + b + c);
     }
 }
-*/
+
 
 
 
