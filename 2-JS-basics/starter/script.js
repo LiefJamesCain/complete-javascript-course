@@ -375,3 +375,36 @@ var finals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]]
 console.log(tips, finals);
 */
 
+///////////////////////////////////////////////////
+// objects and properties 
+////////////////////////////////////////////////////
+// key:value pairs
+// in arrays, order matters. objects, order does not matter
+
+//object literal 
+var james = {
+     firstName: 'James',
+     lastName: 'Bond',
+     birthYear: 1984,
+     family: ['MoneyPenny', 'Q', 'M', 'Felix'],
+     job: 'driver',
+     isMarried: true
+}; 
+console.log(james);
+console.log(james.firstName);
+console.log(james.lastName);
+var bY = 'birthYear';
+console.log(james[bY]);
+
+// can still mutate these properties 
+james.job = 'teacher';
+james['isMarried'] = false;
+console.log(james);
+
+// new Object() syntax 
+var jen = new Object();
+jen.name = 'Jennifer';
+jen.birthYear = 1986;
+jen.lastName = 'Cain';
+console.log(jen);
+
