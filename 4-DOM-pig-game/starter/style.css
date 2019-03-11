@@ -45,6 +45,31 @@ body {
     padding: 100px;
 }
 
+.final-score {
+    color: #555;
+    font-family: Lato;
+    font-size: 18px;
+    left: 50%;
+    padding: 10px;
+    position: absolute;
+    top: 520px;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateX(-50%);
+    width: 160px;
+}
+
+.final-score:focus {
+    outline: none;
+}
+
+#dice-1 {
+    top: 120px;
+}
+
+#dice-2 {
+    top: 250px;
+}
 
 
 /**********************************************
