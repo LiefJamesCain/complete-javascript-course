@@ -97,7 +97,7 @@ mike.calcAge();
 
 
 // creating objects
-
+/*
 var personProto = {
     calcAge: function() {
         console.log(2018 - this.yearOfBirth);
@@ -114,3 +114,42 @@ var jane = Object.create(personProto, {
     yearOfBirth: { value: 1986},
     job: { value: 'designer'}
 })
+*/
+
+// primitives vs objects
+
+// primitives 
+var a = 22;
+var b = 33;
+a = 44;
+console.log(a);
+console.log(b);
+
+//objects 
+var o1 = {
+  name: 'James',
+  age: 34
+};
+
+var o2 = o1;
+o1.age = 55;
+console.log(o1.age);
+console.log(o2.age);
+
+
+// functions 
+var age = 33;
+var obj = {
+  Name: 'Mike',
+  City: 'Portland'
+};
+
+function change(a, b) {
+  a = 30; 
+  b = 'Seattle'
+}
+
+change(age, obj);
+
+console.log(age);
+console.log(obj.city);
