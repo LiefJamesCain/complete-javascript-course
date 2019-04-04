@@ -119,38 +119,108 @@ var jane = Object.create(personProto, {
 // primitives vs objects
 
 // primitives 
-var a = 22;
-var b = 33;
-a = 44;
-console.log(a);
-console.log(b);
+// var a = 22;
+// var b = 33;
+// a = 44;
+// console.log(a);
+// console.log(b);
 
-//objects 
-var o1 = {
-  name: 'James',
-  age: 34
-};
+// //objects 
+// var o1 = {
+//   name: 'James',
+//   age: 34
+// };
 
-var o2 = o1;
-o1.age = 55;
-console.log(o1.age);
-console.log(o2.age);
+// var o2 = o1;
+// o1.age = 55;
+// console.log(o1.age);
+// console.log(o2.age);
 
 
-// functions 
-var age = 33;
-var obj = {
-  Name: 'Mike',
-  City: 'Portland'
-};
+// // functions 
+// var age = 33;
+// var obj = {
+//   Name: 'Mike',
+//   City: 'Portland'
+// };
 
-function change(a, b) {
-  a = 30; 
-  b = 'Seattle'
+// function change(a, b) {
+//   a = 30; 
+//   b = 'Seattle'
+// }
+
+// change(age, obj);
+
+// console.log(age);
+// console.log(obj.city);
+
+
+// passing functions as arguments
+/*
+var years = [1984, 1986, 1990, 2000, 2009];
+
+function arrayCalc(arr, fn) {
+  var arrRes = [];
+  for (i = 0; i < arr.length; i++) {
+    arrRes.push(fn(arr[i]));
+  }
+  return arrRes;
 }
 
-change(age, obj);
+function calcAge(el) {
+  return 2019 - el;
+}
 
-console.log(age);
-console.log(obj.city);
- 
+function fullAge(el) {
+  return el >= 18;
+}
+
+function hRate(el) {
+  if (el >= 18 && el <= 81) {
+    return Math.round(206.9 - (0.67 * el));
+  } else {
+    return -1;
+  }
+}
+
+var ages = arrayCalc(years, calcAge);
+console.log(ages);
+
+var fullAges = arrayCalc(ages, fullAge);
+console.log(fullAges);
+
+var rates = arrayCalc(ages, hRate);
+console.log(rates);
+
+console.log("A person born in " + years[0] + " has a max heart rate of " + ages[0] + " bpm.");
+console.log("A person born in " + years[1] + " has a max heart rate of " + ages[1] + " bpm.");
+console.log("A person born in " + years[2] + " has a max heart rate of " + ages[2] + " bpm.");
+*/
+
+
+// functions returning functions
+/*
+function iQuestion(job) {
+  if (job === 'designer') {
+    return function(name) {
+      console.log(name + ', can you please explain what UX design is?');
+    }
+  } else if (job === 'teacher') {
+    return function(name) {
+      console.log('What subject do you teach, ' + name + "?");
+    }
+  } else {
+    return function(name) {
+      console.log(name + ', what do you do?');
+    }
+  }
+}
+
+var designerQ = iQuestion('designer');
+var teacherQ = iQuestion('teacher');
+
+teacherQ('Mike');
+designerQ('Thomas');
+*/
+
+// immediately invoked function expressions (iife)
